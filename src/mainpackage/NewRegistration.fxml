@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchorpane" prefHeight="473.0" prefWidth="882.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpackage.NewRegistrationController">
+    <stylesheets>
+        <URL value="@newregistration.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutX="27.0" layoutY="41.0">
+         <children>
+            <HBox id="Biodata" prefHeight="231.0" prefWidth="612.0" styleClass="Biodata" stylesheets="@newregistration.css">
+               <children>
+                  <VBox prefHeight="199.0" prefWidth="325.0">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="114.0" text="Surname">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets right="2.0" />
+                                 </padding>
+                              </Label>
+                              <TextField prefHeight="30.0" prefWidth="211.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="114.0" text="First Name">
+                                 <padding>
+                                    <Insets right="2.0" />
+                                 </padding>
+                              </Label>
+                              <TextField prefHeight="29.0" prefWidth="211.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="113.0" text="Other Name">
+                                 <padding>
+                                    <Insets right="2.0" />
+                                 </padding>
+                              </Label>
+                              <TextField prefHeight="30.0" prefWidth="212.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="113.0" text="Date of Birth">
+                                 <padding>
+                                    <Insets right="2.0" />
+                                 </padding>
+                              </Label>
+                              <DatePicker prefHeight="30.0" prefWidth="212.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="114.0" text="Confirm Date of Birth">
+                                 <padding>
+                                    <Insets right="1.0" />
+                                 </padding>
+                              </Label>
+                              <DatePicker prefHeight="30.0" prefWidth="210.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="112.0" text="Disability:" underline="true">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                              <Label fx:id="disabilityStatus" prefHeight="30.0" prefWidth="100.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="180.0" prefWidth="261.0">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="87.0" text="Gender">
+                                 <padding>
+                                    <Insets right="2.0" />
+                                 </padding>
+                              </Label>
+                              <ComboBox fx:id="genderCombo" prefHeight="30.0" prefWidth="174.0" promptText="Select" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="87.0" text="e-Mail">
+                                 <padding>
+                                    <Insets right="2.0" />
+                                 </padding>
+                              </Label>
+                              <TextField prefHeight="25.0" prefWidth="174.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="87.0" text="GSM No.">
+                                 <padding>
+                                    <Insets right="2.0" />
+                                 </padding>
+                              </Label>
+                              <TextField prefHeight="25.0" prefWidth="174.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="87.0" text="Nationality">
+                                 <padding>
+                                    <Insets right="2.0" />
+                                 </padding>
+                              </Label>
+                              <ComboBox fx:id="nationalityCombo" editable="true" prefHeight="25.0" prefWidth="174.0" promptText="Nigerian" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="87.0" text="State of Origin">
+                                 <padding>
+                                    <Insets right="2.0" />
+                                 </padding>
+                              </Label>
+                              <ComboBox fx:id="stateCombo" editable="true" prefHeight="25.0" prefWidth="174.0" promptText="Select State" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="94.0" text="Disability">
+                                 <padding>
+                                    <Insets right="2.0" />
+                                 </padding>
+                              </Label>
+                              <ComboBox fx:id="disabilityCombo" prefHeight="25.0" prefWidth="182.0" promptText="None" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </HBox>
+            <VBox>
+               <children>
+                  <ImageView id="passport" fitHeight="138.0" fitWidth="191.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <HBox>
+                     <children>
+                        <Button mnemonicParsing="false" text="Browse Image">
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" text="Use Camera" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="27.0" layoutY="6.0" prefHeight="30.0" prefWidth="844.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="767.0" text="New Student Registration">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="closeReg" mnemonicParsing="false" prefHeight="30.0" prefWidth="77.0" text="Close" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

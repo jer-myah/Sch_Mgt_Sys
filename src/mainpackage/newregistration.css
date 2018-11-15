@@ -1,0 +1,17 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+
+}
+
+.Biodata {
+    -fx-border-style: dashed;
+    -fx-background-color:darkkhaki;
+}
+
+.passport {
+    -fx-border-style: solid;
+}
