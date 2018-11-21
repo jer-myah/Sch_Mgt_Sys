@@ -45,7 +45,7 @@ public class MainWindowController implements Initializable {
         Parent pt = FXMLLoader.load(getClass().getResource("NewRegistration.fxml"));
        
         Scene sc = new Scene(pt, 900, 450);
-        //st.initModality(Modality.APPLICATION_MODAL);
+        st.initModality(Modality.APPLICATION_MODAL);
         //st.initStyle(StageStyle.UNDECORATED);
         st.setScene(sc);
         st.setResizable(false);
