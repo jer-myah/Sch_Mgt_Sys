@@ -8,8 +8,7 @@ package mainpackage;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -18,7 +17,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 /** FXML Controller class
  * @author Myah */
@@ -48,15 +46,21 @@ public class MainWindowController implements Initializable {
         st.initModality(Modality.APPLICATION_MODAL);
         //st.initStyle(StageStyle.UNDECORATED);
         st.setScene(sc);
+        //st.setX(0);
+        //st.setY(0);
         st.setResizable(false);
         //st.initOwner();
         //st.setAlwaysOnTop(true);
         st.showAndWait();
-        
+        st.setOnCloseRequest((event) -> {
+            ActionEvent evt = null;
+            CloseNewReg(evt);
+        });
     }
     
-    private void CloseNewReg(){
-        newRegistration.setDisable(false);
+    private void CloseNewReg(ActionEvent evt){
+        //newRegistration.setDisable(false);
+        st.close();
     }
     
 }
