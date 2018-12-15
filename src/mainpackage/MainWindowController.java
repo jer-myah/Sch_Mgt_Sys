@@ -17,18 +17,21 @@ import javafx.scene.Scene;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /** FXML Controller class
  * @author Myah */
 
 public class MainWindowController implements Initializable {
     
-    public Stage st = new Stage();;
+    
 
     @FXML
     private MenuItem newRegistration;
     @FXML
     private MenuItem editRegistration;
+    @FXML
+    private MenuItem settings;
 
     // Initializes the controller class.
     
@@ -39,28 +42,33 @@ public class MainWindowController implements Initializable {
     }    
       
     // OpenForm Method for New Registration
-    public void OpenForm() throws IOException{
-        Parent pt = FXMLLoader.load(getClass().getResource("NewRegistration.fxml"));
-       
-        Scene sc = new Scene(pt, 900, 450);
-        st.initModality(Modality.APPLICATION_MODAL);
-        //st.initStyle(StageStyle.UNDECORATED);
-        st.setScene(sc);
-        //st.setX(0);
-        //st.setY(0);
-        st.setResizable(false);
-        //st.initOwner();
-        //st.setAlwaysOnTop(true);
-        st.showAndWait();
-        st.setOnCloseRequest((event) -> {
-            ActionEvent evt = null;
-            CloseNewReg(evt);
-        });
+    @FXML
+    public void OpenForm(ActionEvent event) throws IOException{
+        Stage st;
+        Parent pt;
+        if (event.getSource() == newRegistration){
+            st = new Stage();
+            pt = FXMLLoader.load(getClass().getResource("NewRegistration.fxml"));
+            Scene sc = new Scene(pt, 900, 450);
+            st.setScene(sc);
+            st.initModality(Modality.APPLICATION_MODAL);
+            st.initStyle(StageStyle.UNDECORATED);
+            //st.initOwner(newRegistration.getParentPopup().getOwnerWindow());
+            st.showAndWait();
+        }
+        else if (event.getSource() == settings) {
+            st = new Stage();
+            pt = FXMLLoader.load(getClass().getResource("Setting.fxml"));
+            Scene sc = new Scene(pt, 600, 450);
+            st.setScene(sc);
+            st.initModality(Modality.APPLICATION_MODAL);
+            st.showAndWait();
+        }
     }
     
     private void CloseNewReg(ActionEvent evt){
-        //newRegistration.setDisable(false);
-        st.close();
+        
+        
     }
     
 }

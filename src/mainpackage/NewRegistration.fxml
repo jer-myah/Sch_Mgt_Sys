@@ -152,12 +152,12 @@
                         </HBox>
                         <HBox>
                            <children>
-                              <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="87.0" text="Nationality">
+                              <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="87.0" text="Country">
                                  <padding>
                                     <Insets right="2.0" />
                                  </padding>
                               </Label>
-                              <ComboBox fx:id="nationalityCombo" editable="true" prefHeight="25.0" prefWidth="174.0" promptText="Nigerian" />
+                              <ComboBox fx:id="nationalityCombo" editable="true" prefHeight="25.0" prefWidth="174.0" promptText="Select Country" />
                            </children>
                            <VBox.margin>
                               <Insets bottom="5.0" />
@@ -224,7 +224,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Button fx:id="closeReg" mnemonicParsing="false" prefHeight="30.0" prefWidth="77.0" text="Close" />
+            <Button fx:id="closeReg" mnemonicParsing="false" onAction="#closeWindow" prefHeight="30.0" prefWidth="77.0" text="Close" />
          </children>
       </HBox>
    </children>

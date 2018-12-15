@@ -7,8 +7,6 @@ package mainpackage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
 
 
@@ -19,9 +17,6 @@ import javafx.fxml.Initializable;
  */
 public class SettingController implements Initializable {
 
-    //ObservableList<String> com = FXCollections.observableArrayList("Select", "Male", "Female");
-    
-    
   
     /**
      * Initializes the controller class.

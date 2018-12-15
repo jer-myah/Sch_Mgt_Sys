@@ -23,10 +23,10 @@ public class StartingClass extends Application {
         Parent parent = FXMLLoader.load(getClass().getResource("MainWindow.fxml"));
         
         Scene scene = new Scene(parent, 1024, 650);
-        
+       
         primaryStage.setTitle("Myah Solution");
         primaryStage.setScene(scene);
-        
+        //primaryStage.setFullScreen(true);
         
         primaryStage.show();
     }
